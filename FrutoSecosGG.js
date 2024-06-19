@@ -1,4 +1,3 @@
-
 let producto = '';
 let cantidad = 0;
 let precio = 0;
@@ -6,26 +5,26 @@ let seguirComprando = false;
 let precioTotal = 0;
 let cantidadTotal = 0;
 
-alert('Bienvenidos a FrutoSecosGG!!');
+    alert('Bienvenido a GGFrutoSecos');
 do {
-    producto = prompt('Queres comprar Almendras, Pasas de uva o Chocolate con mani?').toLowerCase();
+    producto = prompt('Queres comprar Mani, Almendras o Ambos?').toLowerCase();
     cantidad = parseInt(prompt('Cuantos queres comprar?'));
 
 
     while (isNaN(cantidad) || cantidad <= 0 ) {
         alert('Debe agregar una cantidad valida!!');
-        cantidad = parseInt(prompt('Queres comprar Almendras, Pasas de uva o Chocolate con mani?'));
+        cantidad = parseInt(prompt('Cuantos queres comprar?'));
     }
 
 
 switch(producto) {
-    case 'Almendras':
+    case 'mani':
     precio = 1000;
     break;
-    case 'Pasas de uva':
+    case 'almendras':
         precio = 1500;
         break;
-        case 'Chocolate con mani':
+        case 'ambos':
         precio = 2500;
         break;
         default:
